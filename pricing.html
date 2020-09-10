@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+
+<body lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Servicios y ventajas</title>
+
+        <!-- Boostrap CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
+
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="app/scss/style.css">
+
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+
+        <!-- Fontawesome -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    </head>
+
+    <!-- TODO Section 1 Pricing (header) -->
+    <header class="header container container__pricing container--px container--py flex flex-jc-sb flex-ai-c">
+        <div class="overlay has-fade"></div>
+
+        <nav class="navbar container--px container--py flex flex-jc-sb flex-ai-c">
+            <div class="navbar__logo">
+                <a href="/">
+                    <img class="logo" src="images/artchitecs_logo_white.png" alt="artchitecs_logo_white">
+                </a>
+            </div>
+            <div class="hmb__menu">
+                <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <div class="navbar__links flex flex-jc-sb hide-for-mobile">
+                <a href="/">Home</a>
+                <a href="/history">¿Quiénes somos?</a>
+                <a href="/pricingService">Servicios</a>
+                <a href="/pricing">Pricing</a>
+
+            </div>
+        </nav>
+        <div class="header__menu has-fade hide-for-desktop">
+            <a href="/">Home</a>
+            <a href="/history">¿Quiénes somos?</a>
+            <a href="/pricingService">Servicios</a>
+            <a href="/pricing">Pricing</a>
+            <div class="socials-mobile flex flex-dir-r flex-jc-c flex-ai-c">
+                <a href="https://www.facebook.com/Artchitects.Productions/" target="_blank">
+                    <i class="fab fab-icon fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.instagram.com/artchitects.productions/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://twitter.com/ArtchitectsP" target="_blank">
+                    <i class="fab fab-icon fa-twitter"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <section class="pricing container--pall">
+            <div class="pricing__cta flex">
+                <h1 class="pricing__title">
+                    De aquí a un año, <br>desearías haber empezado hoy
+                </h1>
+                <h3 class="pricing__text">
+                    Aquí encontrarás todos nuestros servicios y todas las herramientas que ponemos a tu disposición para
+                    desatar
+                    todo tu potencial, si no encuentras un plan que se ajuste a tus necesidades, ¡ponte en contacto con
+                    nosotros!
+                    <span>¡TE ASESORAMOS GRATUITAMENTE!</span>
+                </h3>
+            </div>
+            <div class="button_container">
+                <button type=button href="#" class="button hero_button" data-toggle="modal" data-target="#formModal"
+                    data-whatever="@details"> Hablemos de tu
+                    proyecto</button>
+
+                <!-- Boostrap Modal / Pop up Form on the second button click event -->
+                <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalExample"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="fomrModal">Cuéntanos qué necesitas</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="/register" method="POST">
+                                    <div class="form-group">
+                                        <label for="name" class="col-form-label">Nombre:</label>
+                                        <input type="text" name="uname" class="form-control" id="name"
+                                            placeholder="Introduce tu nombre..">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="col-form-label">Email:</label>
+                                        <input type="email" name="umail" class="form-control" id="email"
+                                            placeholder="Introduce tu email..">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message-text" class="col-form-label">¿Cómo podemos
+                                            ayudarte?</label>
+                                        <textarea class="form-control" name="umsg" id="message-text"
+                                            placeholder="Me pongo en contacto con Artchitects.."></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End  -->
+            </div>
+            <div class="lasttext">
+                <h5>
+                    Todos los Packs y servicios individuales estarán sujetos a contratos detallados específicamente para
+                    cada
+                    artista, fijando unas condiciones de pago y desarrollo de la actividad óptimas y favorables para
+                    ambas partes.
+                </h5>
+            </div>
+
+
+        </section>
+    </header>
+
+
+    <!-- TODO Section 2 Pricing (packs recomendados) -->
+    <div id="service" class="container_split split__pricing">
+        <h1 class="split__title">Nuestros packs recomendados</h1>
+
+    </div>
+
+    <section class="container__recomended flex container container-pall">
+
+        <div class="grid">
+            <div class="mycard basic">
+                <div class="first__part">
+                    <div class="title">
+                        <h2>Pack de Bienvenida</h2>
+                    </div>
+                    <div class="price">
+                        <h4>1.250€</h4>
+                        <h3>*Precio por separado 1.370€</h3>
+                        <h5>15% derechos de autor en canciones del artista o +25% derechos de autor en canciones
+                            compuestas
+                            por Artchitects.
+                        </h5>
+                        <span> Producción de 1 canción. +1 sesión de Identidad Artística</span>
+                    </div>
+                    <div class="option">
+                        <ul>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Vocal Coaching de estudio</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Musical Coaching de estudio</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Arreglos, Producción, Grabación, Mezcla,
+                                Mastering</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> 1 Sesión de Identidad Artística</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="card__texts flex">
+
+                    <div class="explication">
+                        <p class="explication__text">
+                            Ven a conocernos con este pack de Bienvenida, sólo disponible para artistas que nunca hayan
+                            trabajado con nosotros. Descubre cómo trabajamos desde dentro, déjanos sacarle el máximo
+                            partido
+                            a tu primera canción producida con Artchitects, explora tu sonido, y empieza a encontrar tu
+                            señal de identidad. Además te regalamos una sesión de identidad artística, para que
+                            descubras lo
+                            que eres capaz de hacer encima de un escenario! ¡Te esperamos!
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="mycard basic">
+                <div class="first__part">
+                    <div class="title">
+                        <h2>Pack Academia</h2>
+                    </div>
+                    <div class="price">
+                        <h4>325€</h4>
+                    </div>
+                    <div class="option">
+                        <ul>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Vocal Coaching</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Musical Coaching</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Armonía</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Composición</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> 8 horas al mes a repartir entre los 3
+                                servicios.</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="card__texts flex">
+
+                    <div class="explication">
+                        <p class="explication__text">
+                            Construye tus bases como siempre habías soñado, amplía tus registros y capacidades como
+                            músico
+                            con
+                            este Pack
+                            Académico que te ofrece Artchitects, encontrarás todo lo necesario para elevar tu nivel.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="mycard basic">
+                <div class="first__part">
+                    <div class="title">
+                        <h2>Pack EP</h2>
+                    </div>
+                    <div class="price">
+                        <h4>4.500€</h4>
+                        <h3>*Precio por separado 6.280€</h3>
+                        <h5>15% derechos de autor en canciones del artista o +25% derechos de autor en canciones
+                            compuestas
+                            por Artchitects.
+                        </h5>
+                        <span> Producción de 3 canciones. +1 de forma totalmente gratuita!</span>
+
+
+                    </div>
+                    <div class="option">
+                        <ul>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Vocal Coaching de estudio</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Musical Coaching de estudio</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Arreglos, Producción, Grabación, Mezcla,
+                                Mastering</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> 4 sesiones de Identidad Artística</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Imagen Digital</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Management</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="card__texts flex">
+
+                    <div class="explication2">
+                        <p class="explication__text">
+                            Produce tu EP con nosotros, llévate además sesiones personalizadas de vocal coaching y
+                            musical
+                            coaching, no se trata de solo grabar, sino grabar con calidad, así como arreglos durante las
+                            sesiones de producción y grabación. Con este pack tienes también la posibilidad de mejorar
+                            tu
+                            imagen como artista en el mundo digital y convertirte en una bestia del escenario! Ah, y por
+                            si
+                            fuera poco te ofrecemos nuestros servicios de management incluidos, para que todo tu talento
+                            vuele fuera del estudio.
+                            Recomendamos este Pack para artistas que todavía no cuenten con un repertorio muy amplio, y
+                            tengan ganas de empezar a desarrollar su música, su sonido y su estilo.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mycard basic">
+                <div class="first__part">
+                    <div class="title">
+                        <h2>Pack LP</h2>
+                    </div>
+                    <div class="price">
+                        <h4>8.000€</h4>
+                        <h3>*Precio por separado 12.560€</h3>
+                        <h5>15% derechos de autor en canciones del artista o +25% derechos de autor en canciones
+                            compuestas
+                            por Artchitects.
+                        </h5>
+                        <span> Producción de 7 canciones. +1 de forma totalmente gratuita!</span>
+
+
+                    </div>
+                    <div class="option">
+                        <ul>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Vocal Coaching de estudio</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Musical Coaching de estudio</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Arreglos, Producción, Grabación, Mezcla,
+                                Mastering</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> 8 sesiones de Identidad Artística</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Imagen Digital</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Management</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="card__texts flex">
+
+                    <div class="explication2">
+                        <p class="explication__text">
+                            Produce tu LP con nosotros, lleva tus canciones al siguiente nivel con nuestro asesoramiento
+                            personalizado durante todo el proceso, masteriza tus dotes escénicas, y obtén una imagen
+                            sólida
+                            como artista para no dejar indiferente a nadie.
+                            Recomendamos este Pack para artistas que cuenten con un repertorio amplio, y quieran
+                            culminar
+                            sus composiciones en una producción diseñada para brillar. Además potenciaremos vuestra
+                            imagen y
+                            sacaremos lo mejor de vuestra personalidad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TODO Section 3 Pricing (all prices and services) -->
+    <div id="service" class="container_split split__pricing">
+        <h1 class="split__title">Ofrecemos todos nuestros servicios por separado</h1>
+    </div>
+
+    <section class="allPrices container container--pall flex">
+
+        <div class="container__allPrices">
+            <div id="wrapper">
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <ul class="harga">
+                            <li class="harga-judul">Academia - Vocal Coaching</li>
+                            <li class="wira">35€</li>
+                            <li>Una clase de 1 hora de duración</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex-item">
+                        <ul class="harga">
+                            <li class="harga-judul">Academia - Musical Coaching</li>
+                            <li class="wira">50€</li>
+                            <li>Una clase de 1 hora de duración</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="flex-item">
+                        <ul class="harga">
+                            <li class="harga-judul">Academia - Armonía y composición</li>
+                            <li class="wira">25€</li>
+                            <li>Una clase de 1 hora de duración</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex-item">
+                        <ul class="harga">
+                            <li class="harga-judul">Identidad Artística</li>
+                            <li class="wira">70€</li>
+                            <li>Una clase de 1 hora de duración
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <ul class="harga">
+                            <li class="harga-judul">Producción</li>
+                            <li class="wira">1.300€</li>
+                            <li>Vocal Coaching studio</li>
+                            <li>Musical coaching studio</li>
+                            <li>Arreglos, Producción, Grabación, Mezcla, Mastering</li>
+                            <li>15% Derechos de autor en canciones del artista, 25% Canción compuesta por Artchitects
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="flex-item">
+                        <ul class="harga">
+                            <li class="harga-judul">Composición</li>
+                            <li class="wira">500€ - 1.300€</li>
+                            <li>Composición de 1 a 3 temas
+                            </li>
+                            <li>1 tema = 500€ + 25% Derechos de Autor
+                            </li>
+                            <li>2 temas = 900€ + 25% Derechos de Autor
+                            </li>
+                            <li>3 temas = 1.300€ + 25% Derechos de Autor
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="flex-item">
+                        <ul class="harga">
+                            <li class="harga-judul">Management</li>
+                            <li class="wira">Gratuito</li>
+                            <li>Búsqueda de conciertos, eventos, gira de medios, distribución por plataformas digitales
+                                y
+                                merchandising de manera indefinida. Acompañamiento de por vida.
+
+                            </li>
+                            <li>
+                                Gratuito, únicamente 15% en ventas
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="flex-item">
+                        <ul class="harga">
+                            <li class="harga-judul">Imagen digital</li>
+                            <li class="wira">300€</li>
+                            <li>Imagen digital es un servicio único y completo, se genera todo lo necesario para
+                                establecer las bases de su presencia en redes sociales
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- TODO Section 4 Pricing Page (Newsletter) -->
+    <section class="newsletter container_newsletter">
+        <h1 class="split__title">¡Suscríbete a nuestra newsletter!</h1>
+        <form action="/newsLetterSignUp" method="post">
+            <input type="email" name="subscribedMail" id="" placeholder="Enter your email" size="25">
+            <button type="submit" class="btn btn-dark">Sign Up</button>
+        </form>
+        <p class="split__text">¡No te pierdas nuestras noticias y novedades! Mantente informado de todo lo que
+            ocurre en
+            Artchitects!</p>
+    </section>
+
+
+    <!-- TODO Section 5 Pricing Page (Footer) -->
+
+    <section class="footer">
+        <div class="footer__container flex container--pall">
+            <div class="first__part__footer">
+                <div class="footer__logo hide-for-mobile">
+                    <a href="#top" rel="noopener noreferrer">
+                        <img class="logo" src="images/artchitecs_logo_white.png" alt="artchitecs_logo_white">
+                    </a>
+                </div>
+
+                <div class="footer__media flex">
+                    <div class="footer__top flex">
+                        <a href="/">Home</a>
+                        <a href="#service">Servicios</a>
+                        <a href="/history">¿Quiénes somos?</a>
+                        <a href="/pricing">Pricing</a>
+                    </div>
+                    <div class="footer__bottom flex">
+                        <a href="https://www.facebook.com/Artchitects.Productions/" target="_blank">
+                            <i class="fab fab-icon fa-facebook-f"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/artchitects.productions/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <a href="https://twitter.com/ArtchitectsP" target="_blank">
+                            <i class="fab fab-icon fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__where">
+                    <h2 class="hide-for-mobile">
+                        info@artchitectsproductions.com
+                    </h2>
+                    <h2 class="hide-for-mobile">+34 690019732</h2>
+                    <h2 class="hide-for-mobile">Barcelona, España. 08020</h2>
+                </div>
+
+            </div>
+            <div class="copyright__container">
+                <h2>Artchitects Productions 2020 S.L</h2>
+            </div>
+        </div>
+
+
+    </section>
+    <script src="app/js/script.js"></script>
+</body>
+
+</html>

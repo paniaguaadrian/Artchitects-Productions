@@ -1,0 +1,128 @@
+// General style
+.body__container {
+    height: 200%;
+    background: linear-gradient(130deg, rgba(70, 49, 239, 1) 10%, rgba(132, 30, 255, 1) 40%, rgba(176, 65, 193, 1) 85%);
+    align-items: center;
+    align-content: center;
+    color: white;
+}
+
+// Log in style
+
+.body__container__admin {
+    height: 100%;
+    background: linear-gradient(130deg, rgba(70, 49, 239, 1) 10%, rgba(132, 30, 255, 1) 40%, rgba(176, 65, 193, 1) 85%);
+    align-items: center;
+    align-content: center;
+    color: white;
+
+    @include breakpoint-down(small) {
+        padding-top: 30%;
+    }
+}
+
+.container__admin {
+    color: black;
+    font-family: $body-font;
+    font-size: $font-sm;
+    text-align: center;
+    padding-top: 15%;
+
+    @include breakpoint-down(small) {
+        color: black;
+        font-family: $body-font;
+        font-size: $font-sm;
+        text-align: center;
+        padding-top: 15%;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+
+}
+
+.card__admin {
+    width: 30rem;
+    box-shadow: 5px 5px 20px 15px #0000008c;
+}
+
+// subscription style
+
+
+.navbar__admin {
+    border-bottom: 1px white solid;
+}
+
+.list__header {
+    margin: 2rem 2rem;
+
+    h1 {
+        font-family: $body-font;
+        font-size: $font-med;
+        font-weight: 500;
+    }
+
+}
+
+.list__container {
+    margin-top: 2.5rem;
+    font-size: $font-vsm;
+    font-family: $body-font;
+}
+
+.list-group-item {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 50%;
+
+    @include breakpoint-down(small) {
+        width: 100%;
+    }
+
+}
+
+// user-data style
+
+.forms__container {
+    margin: 4rem 0rem 0rem 1rem;
+
+    @include breakpoint-down(small) {
+        margin: 1rem 1rem;
+    }
+
+}
+
+.jumbotron {
+    background-color: transparent !important;
+    border: 1px solid white;
+    width: 75%;
+    margin-bottom: 20px;
+    padding: 1rem 2rem;
+
+    hr {
+        background-color: rgba(255, 255, 255, 0.541) !important;
+    }
+
+    @include breakpoint-down(small) {
+        width: 100%;
+    }
+
+
+    h1 {
+        font-size: $font-bsm;
+
+        @include breakpoint-down(small) {
+            font-size: $font-sm;
+        }
+    }
+}
+
+.email__text {
+    font-size: $font-vsm;
+}
+
+.button__admin:hover {
+    border: 1px solid white;
+}

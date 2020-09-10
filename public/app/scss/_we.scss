@@ -1,0 +1,128 @@
+.container__we {
+    height: 65rem;
+
+    @include breakpoint-down(small) {
+        height: 137rem;
+    }
+}
+
+.we {
+    width: 100%;
+
+    &__container {
+        flex-direction: row;
+
+        @include breakpoint-down(small) {
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        margin: 4rem 0;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+
+        @include breakpoint-down(small) {
+            margin: 1.5rem 0;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+        }
+
+    }
+
+    &__image {
+        border-radius: 30%;
+        border: 5px solid #904BD6;
+
+        -webkit-box-shadow: 0px 4px 3px 3px rgba(190, 29, 249, 1);
+        -moz-box-shadow: 0px 4px 3px 3px rgba(190, 29, 249, 1);
+        box-shadow: 0px 4px 3px 3px rgba(190, 29, 249, 1);
+
+        @include breakpoint-down(small) {
+            width: 20rem;
+            border-radius: 30%;
+            border: 5px solid #904BD6;
+
+            -webkit-box-shadow: 0px 4px 3px 3px rgba(190, 29, 249, 1);
+            -moz-box-shadow: 0px 4px 3px 3px rgba(190, 29, 249, 1);
+            box-shadow: 0px 4px 3px 3px rgba(190, 29, 249, 1);
+        }
+
+    }
+
+    &__title {
+        font-family: $body-font;
+        font-size: $font-med;
+        font-weight: 600;
+        padding-top: 2rem;
+        line-height: 1.7rem;
+
+        span {
+            font-family: $body-font;
+            font-size: $font-sm;
+            font-weight: 500;
+        }
+    }
+
+    &__description {
+        font-family: $body-font;
+        font-size: $font-vsm;
+        font-weight: 400;
+
+        margin: 1rem 4rem;
+
+        @include breakpoint-down(small) {
+            font-family: $body-font;
+            font-size: $font-vsm;
+            font-weight: 400;
+
+            margin: 1rem 2rem;
+        }
+    }
+
+    .button_container {
+        text-align: center;
+
+
+    }
+
+    .button {
+        text-align: center;
+        color: #6D357B;
+        font-family: $button-font;
+        font-size: $font-vsm;
+        font-weight: 600;
+        border-radius: 50px;
+        border: none;
+        width: 14rem;
+        height: 3rem;
+        margin-left: 4rem;
+
+        -webkit-box-shadow: -8px -7px 17px -7px #ffffff8c, 10px 9px 17px -5px #00000091;
+        box-shadow: -8px -7px 17px -7px #ffffff8c,
+            10px 9px 17px -5px #00000091;
+
+        @include breakpoint-down(small) {
+            text-align: center;
+            color: #6D357B;
+            background-color: white;
+            font-family: $button-font;
+            font-size: $font-vsm;
+            font-weight: 600;
+            border-radius: 50px;
+            border: none;
+            width: 14rem;
+            height: 3rem;
+            margin-left: 0rem;
+            margin-bottom: 1.5rem;
+
+            -webkit-box-shadow: -8px -7px 17px -7px #ffffff8c,
+                10px 9px 17px -5px #00000091;
+            box-shadow: -8px -7px 17px -7px #ffffff8c,
+                10px 9px 17px -5px #00000091;
+        }
+
+    }
+}

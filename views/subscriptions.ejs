@@ -1,0 +1,51 @@
+<%- include("partial/header.ejs") -%>
+
+<body>
+    <div class="body__container">
+        <nav class="navbar navbar__admin navbar-expand-lg navbar-dark">
+            <!-- Link to the public website (the normal site) -->
+            <a class="navbar-brand" href="/">Artchitects</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse w-100 order-1 order-md-0 dual-collapse2" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/newsLetter-emails">Subscripciones Newsletter <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Link here to the user-data.ejs -->
+                        <a class="nav-link" href="/user-data">Correos Recibidos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <!-- Logout button -->
+                        <button type="button" class="btn btn-dark float-right button__admin"> <a
+                                href="/logout">Logout</a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="list__header">
+            <h1>
+                E-mails registrados en la Newsletter
+            </h1>
+        </div>
+        <div class="list__container container-fluid">
+            <ul class="list-group">
+                <% list.forEach((e)=>{ %>
+                <li class="list-group-item">
+                    <%= e.mailID %>
+                </li>
+                <% }) %>
+            </ul>
+        </div>
+    </div>
+</body>

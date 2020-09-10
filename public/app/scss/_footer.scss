@@ -1,0 +1,112 @@
+.footer__container {
+    height: 14rem;
+    flex-direction: column;
+    background: linear-gradient(-40deg, rgba(70, 49, 239, 1) 10%, rgba(132, 30, 255, 1) 40%, rgba(176, 65, 193, 1) 85%);
+    color: white;
+
+    @include breakpoint-down (small) {
+        flex-direction: column;
+        height: 12rem;
+    }
+}
+
+.first__part__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+
+
+.footer__logo {
+    img {
+        width: 20rem;
+    }
+}
+
+.footer__media {
+    flex-direction: column;
+
+    @include breakpoint-down(small) {
+        flex-direction: column;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        padding-right: 3rem;
+
+        @include breakpoint-down(small) {
+            color: white;
+            text-decoration: none;
+            padding-right: .7rem;
+            font-size: 1rem;
+
+        }
+
+    }
+
+    a:hover {
+        font-weight: 500;
+    }
+
+}
+
+.footer__top {
+    padding-bottom: 1rem;
+
+    @include breakpoint-down(small) {
+        padding-bottom: 1rem;
+    }
+}
+
+.footer__bottom {
+    justify-content: space-around;
+    border-top: 1px solid white;
+    padding-top: 1rem;
+
+    @include breakpoint-down(small) {
+        flex-direction: row;
+        justify-content: space-around;
+        border-top: 1px solid white;
+        padding-top: 1rem;
+    }
+
+}
+
+
+.footer__where {
+    h2 {
+        font-size: $font-sm;
+        text-align: right;
+        font-weight: 100;
+
+        @include breakpoint-down(small) {
+            font-size: $font-vsm;
+            text-align: right;
+            font-weight: 100;
+        }
+    }
+
+}
+
+.copyright__container {
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding-top: 4rem;
+
+    @include breakpoint-down(small) {
+        padding-top: 2rem;
+    }
+
+    h2 {
+        font-size: $font-sm;
+        font-weight: 100;
+
+        @include breakpoint-down(small) {
+            font-size: $font-vsm;
+            font-weight: 100;
+        }
+    }
+}

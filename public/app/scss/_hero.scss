@@ -1,0 +1,168 @@
+.hero {
+    width: 100%;
+    align-items: center;
+
+    &__left {
+        flex: 0;
+        height: 50rem;
+        flex-direction: row;
+
+        .vertical-line {
+            border-left: 10px red;
+            width: 100px;
+            background-color: white;
+            height: 100%;
+            float: left;
+        }
+
+        .hero__media {
+            padding-top: 20rem;
+            flex-direction: column;
+            align-items: left;
+            text-align: left;
+
+            a {
+                padding-bottom: 2rem;
+                color: white !important;
+            }
+        }
+
+        img {
+            margin-top: 10rem;
+        }
+
+    }
+
+    &__center {
+
+        flex: 2;
+        height: 100%;
+
+
+
+        img {
+            width: 35rem;
+
+
+        }
+    }
+
+    &__right {
+        text-align: left;
+        flex: 3;
+
+        @include breakpoint-down (small) {
+            margin-top: 1.5rem;
+            text-align: left;
+            padding: 0 0;
+        }
+
+        h3 {
+            font-family: $front-font;
+            font-size: $font-med;
+            font-weight: 100;
+            letter-spacing: 3px;
+            margin-bottom: 0;
+
+            @include breakpoint-down (small) {
+                font-family: $front-font;
+                font-size: $font-sm;
+                font-weight: 100;
+                letter-spacing: 3px;
+                margin: 0 auto;
+                padding: 0 0;
+                text-align: center;
+            }
+        }
+
+        h1 {
+            font-family: $front-font;
+            font-size: $font-lg;
+            text-transform: uppercase;
+
+            @include breakpoint-down (small) {
+                font-family: $front-font;
+                font-size: 2.5rem;
+                text-transform: uppercase;
+                padding: 0 0;
+                text-align: center;
+            }
+        }
+
+        p {
+            font-family: $front-font;
+            font-size: $font-sm;
+            font-weight: 100;
+            padding-right: 4rem;
+            margin-bottom: 2rem;
+
+            @include breakpoint-down (small) {
+                font-family: $front-font;
+                font-size: $font-vsm;
+                font-weight: 100;
+                padding: 0 0;
+                text-align: center;
+                margin-bottom: .5rem;
+
+
+            }
+
+            span {
+                font-weight: 600;
+            }
+
+        }
+
+
+
+    }
+
+    .buttons_container {
+        @include breakpoint-down (small) {
+            text-align: center;
+            margin: 0 auto;
+            padding: 0 0;
+        }
+    }
+
+    .button {
+        color: #6D357B;
+        font-family: $button-font;
+        font-size: $font-vsm;
+        font-weight: 600;
+        border-radius: 50px;
+        border: 0;
+        width: 14rem;
+        height: 3rem;
+
+        margin-right: 2rem;
+        margin-top: 4rem;
+
+        -webkit-box-shadow: -8px -7px 17px -7px #ffffff8c,
+
+            10px 9px 17px -5px #00000091;
+        box-shadow: -8px -7px 17px -7px #ffffff8c,
+            10px 9px 17px -5px #00000091;
+
+        @include breakpoint-down (small) {
+            color: #6D357B;
+            background-color: white;
+            font-family: $button-font;
+            font-size: $font-vsm;
+            font-weight: 600;
+            border-radius: 50px;
+            border: 0;
+            width: 15rem;
+            height: 2.5rem;
+            margin: 1rem 0;
+
+            -webkit-box-shadow: -8px -7px 17px -7px #ffffff8c,
+
+                10px 9px 17px -5px #00000091;
+            box-shadow: -8px -7px 17px -7px #ffffff8c,
+                10px 9px 17px -5px #00000091;
+        }
+
+
+    }
+}

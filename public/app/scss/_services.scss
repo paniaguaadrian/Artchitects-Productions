@@ -1,0 +1,202 @@
+.container_services {
+    height: 77rem;
+
+    @include breakpoint-down(small) {
+        height: 185rem;
+    }
+}
+
+.services {
+
+    &__header {
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        @include breakpoint-down(small) {
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        h1 {
+            font-family: $body-font;
+            font-size: $font-bsm;
+            font-weight: bold;
+            text-align: center;
+            margin: 5rem 5rem;
+
+            @include breakpoint-down(small) {
+                font-family: $body-font;
+                font-size: $font-sm;
+                font-weight: bold;
+                text-align: center;
+                margin: .5rem .5rem;
+            }
+        }
+
+    }
+
+    .first__half {
+        width: 25em;
+        margin: 15px;
+        border-radius: 10px;
+        align-items: right;
+
+        hr {
+            background-color: white;
+        }
+
+        @include breakpoint-down(small) {
+            width: 3em;
+            margin: 1px;
+            border-radius: 10px;
+            align-items: right;
+        }
+    }
+
+    .second__half {
+        width: 25em;
+        margin: 15px;
+        border-radius: 10px;
+        align-items: left;
+
+        hr {
+            background-color: white;
+        }
+
+        @include breakpoint-down(small) {
+            width: 3em;
+            margin: 1px;
+            border-radius: 10px;
+            align-items: left;
+        }
+    }
+
+    &__container {
+        flex-direction: column;
+    }
+
+    &__top {
+        margin: 3rem 5rem 0 5rem;
+        flex-direction: row;
+
+        @include breakpoint-down(small) {
+            margin: 3rem 1rem 0 1rem;
+            flex-direction: column;
+        }
+    }
+
+    &__bottom {
+        margin: 3rem 5rem 0 5rem;
+        flex-direction: row;
+
+        @include breakpoint-down(small) {
+            margin: 3rem 1rem 0 1rem;
+            flex-direction: column;
+        }
+    }
+
+
+    &__item {
+        align-items: center;
+        text-align: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 1;
+
+        @include breakpoint-down (small) {
+            align-items: center;
+            text-align: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex: 1;
+        }
+
+
+    }
+
+    .composicion__item {
+        margin-top: 1.5rem;
+
+        @include breakpoint-down(small) {
+            margin-top: 0rem;
+        }
+    }
+
+    // &__icon {
+    //     @include breakpoint-down(small) {}
+    // }
+
+    &__title {
+        font-family: $body-font;
+        font-size: $font-sm;
+        font-weight: bold;
+        padding-top: 2rem;
+
+        @include breakpoint-down(small) {
+            font-family: $body-font;
+            font-size: $font-sm;
+            font-weight: bold;
+            padding-top: 2rem;
+        }
+    }
+
+    &__description {
+        font-family: $body-font;
+        font-size: $font-vsm;
+        font-weight: light;
+        text-align: center;
+
+        @include breakpoint-down(small) {
+            font-family: $body-font;
+            font-size: $font-vsm;
+            font-weight: light;
+            text-align: center;
+            margin: 2rem auto 5rem;
+        }
+
+        p {
+            margin: 1rem 6rem 2rem 6rem;
+
+            @include breakpoint-down(small) {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .button__container {
+        text-align: center;
+        padding-top: 1rem;
+
+        @include breakpoint-down(small) {
+            text-align: center;
+            padding-top: 0rem;
+        }
+    }
+
+    .button {
+        text-align: center;
+        color: #6D357B;
+        background-color: white;
+        font-family: $button-font;
+        font-size: $font-vsm;
+        font-weight: 600;
+        border-radius: 50px;
+        border: none;
+        width: 14rem;
+        height: 2.7rem;
+
+        -webkit-box-shadow: -8px -7px 17px -7px #ffffff8c,
+
+            10px 9px 17px -5px #00000091;
+        box-shadow: -8px -7px 17px -7px #ffffff8c,
+            10px 9px 17px -5px #00000091;
+
+
+    }
+}
